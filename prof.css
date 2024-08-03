@@ -1,25 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+.social-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  margin-left:50px;
+}
+.social-buttons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size:20px;
+  color: white;
+  border-radius: 60%;
+  background-color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.social-buttons a:hover {
+  background-color: #555;
+}
+.social-buttons .github { background-color: #333; }
+.social-buttons .instagram { background-color: #cb2745; }
+.social-buttons .linkedin { background-color: #0077B5; }
+.social-buttons .telegram { background-color: #1d242b; }
+
+.container {
+  width: 100%;
+  padding: 20px;
+}
+
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
+a {
+  text-decoration: none;
+}
 body {
   background: #03002e;
   font-family: "Poppins", sans-serif;
 }
-
-html {
+html{
   scroll-behavior: smooth;
 }
-
-:root {
+:root{
   --max-width: 1200px;
 }
-
-nav {
+nav{
   width: 100%;
   position: fixed;
   top: 0;
@@ -28,31 +59,28 @@ nav {
   color: #fff;
   z-index: 99;
 }
-
-.nav_content {
+.nav_content{
   max-width: var(--max-width);
   margin: auto;
   padding: 1.5rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
+} 
 
-.logo a {
+.logo a{
   color: #c8a7d3;
   font-size: 30px;
   font-weight: 600;
 }
-
-ul {
+ul{
   display: flex;
   align-items: center;
   gap: 1rem;
   list-style: none;
   transition: left 0.3s;
 }
-
-ul li a {
+ul li a{
   padding: 0.5rem 1rem;
   border: 2px solid transparent;
   text-decoration: none;
@@ -60,18 +88,15 @@ ul li a {
   color: #fff;
   transition: 1.5s;
 }
-
-ul li a:hover {
+ul li a:hover{
   border-top-color: #fff;
   border-bottom-color: #fff;
   color: #fff;
 }
-
-.hero {
+.hero{
   background: #03002e;
 }
-
-.hero_container {
+.hero_container{
   min-height: 100vh;
   max-width: var(--max-width);
   margin: auto;
@@ -80,115 +105,112 @@ ul li a:hover {
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
 }
-
-.content {
+.content{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 50px;
+   margin-left: 50px;
 }
-
-.subtitle {
+.subtitle{
   letter-spacing: 2px;
   color: #fff;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
-
-.title {
+.title{
   font-size: 2.5rem;
   font-weight: 400;
   line-height: 3rem;
   color: #fff;
   margin-bottom: 1rem;
 }
-
-.title span {
+.title span{
   color: #76a4c6;
   font-weight: 600;
 }
-
-.description {
+.description{
   font-size: 1.2rem;
   line-height: 1.5rem;
   color: #fff;
   margin-bottom: 2rem;
 }
-
-.image {
+.image{
   display: grid;
   place-items: center;
+  
 }
-
-.image img {
+.image img{
   border-radius: 50%;
   width: min(25rem, 90%);
   margin-top: 175px;
   margin-left: 300px;
-  animation: animate 5s ease-in-out infinite;
 }
-
-@keyframes animate {
-  0% {
+.image img{
+  animation: animate 5s ease-in-out infinite;
+  
+}
+@keyframes animate{
+  0%{
     transform: translateY(0);
   }
-  50% {
+  50%{
     transform: translateY(-2.5rem);
   }
-  100% {
+  100%{
     transform: translateY(0);
   }
 }
-
-.container {
-  width: 100%;
-  padding: 20px;
+.container{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
 }
-
-.heading {
+.heading{
   text-align: center;
   font-size: 3.5rem;
   color: #fff;
   margin-top: 0px;
 }
-
-.heading span {
+.heading span{
   color: #76a4c6;
 }
-
-.card {
+.card{
   background-color: #0e0c0b;
-  border-radius: 10px;
-  padding: 20px;
-  width: 200px;
-  height: 250px;
-  text-align: center;
-  size: 50px;
-  color: #3fa50d;
-  border-radius: 30%;
-  margin-top: 50px;
-  margin-bottom: 100px;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    height:250px;
+    text-align: center;
+    size: 50px;
+    color: #3fa50d;
+    border-radius: 30%;
+    margin-top: 50px;
+    margin-bottom: 100px;;
+    
 }
-
-.card:hover {
-  transform: scale(1.1, 1.1);
-  transition: 0.5s linear;
+.card:hover{
+  transform: scale(1.1,1.1);
+  transition: .5s linear;
 }
+.container{
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 
+}
 .card img {
   width: 150px;
   height: 170px;
   margin-bottom: 10px;
   border-radius: 50%;
   font-weight: bolder;
+  
 }
 
-.portfolio-projects p {
+.portfolio-projects p{
   font-size: 1.3rem;
   margin-right: 40px;
   margin-left: 40px;
@@ -196,100 +218,37 @@ ul li a:hover {
   color: #fff;
 }
 
-footer {
+
+  
+  
+
+
+
+
+/* @ Footer*/
+
+.footer-text p{
+  font-size: 0.7rem;
+}
+
+
+footer{
   background-color: #333;
   color: white;
   text-align: center;
   padding: 20px 0;
 }
-
 .footer-links {
   display: flex;
   justify-content: center;
   gap: 20px;
   margin-bottom: 10px;
 }
-
 .footer-links a {
   color: white;
   text-decoration: none;
   transition: color 0.3s;
 }
-
 .footer-links a:hover {
   color: #ddd;
-}
-
-.footer-text p {
-  font-size: 0.7rem;
-}
-
-/* Social Buttons */
-.social-buttons {
-  display: flex;
-  gap: 10px;
-  margin-top: 20px;
-  margin-left: 50px;
-}
-
-.social-buttons a {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  font-size: 20px;
-  color: white;
-  border-radius: 60%;
-  background-color: #333;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.social-buttons a:hover {
-  background-color: #555;
-}
-
-.social-buttons .github {
-  background-color: #333;
-}
-
-.social-buttons .instagram {
-  background-color: #cb2745;
-}
-
-.social-buttons .linkedin {
-  background-color: #0077B5;
-}
-
-.social-buttons .telegram {
-  background-color: #1d242b;
-}
-
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-  .nav_content {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .hero_container {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .image img {
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .card {
-    width: 100%;
-    margin: 10px 0;
-  }
-
-  .social-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
 }
