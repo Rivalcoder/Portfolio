@@ -26,6 +26,10 @@
 .social-buttons .linkedin { background-color: #0077B5; }
 .social-buttons .telegram { background-color: #1d242b; }
 
+.container {
+  width: 100%;
+  padding: 20px;
+}
 
 
 * {
