@@ -12,7 +12,7 @@ import { SiC, SiExpress, SiPython, SiJavascript, SiMongodb, SiFigma, SiReact, Si
 export default function Home() {
     const [click, setclick] = useState(true);
 
-    const onclick = () => {
+    const checker = () => {
         setclick(!click);
     }
 
@@ -21,7 +21,7 @@ export default function Home() {
             <header className="fixed z-20 w-full bg-[#03002e]">
                 <nav className="w-full flex flex-row m-5 p-2 font-medium text-3xl justify-between items-center max-sm:flex-col">
                 <div className="flex flex-row self-start">
-                    <button className="hidden max-sm:block" onClick={onclick}><MdOutlineMenuOpen fontSize={35} /></button>
+                    <button className="hidden max-sm:block" onClick={checker}><MdOutlineMenuOpen fontSize={35} /></button>
                     <a href="/" className="hover-text-3xl ml-3 hover:scale-110 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-yellow-300 to-green-400 hover:text-red-600 transition-all duration-200 ">Rival Coder</a>
                 </div>
                     <ul className={`flex flex-row gap-10 text-xl mr-4 max-sm:flex-col max-sm:${click?"hidden":"flex"} max-sm:p-5 max-sm:self-start max-sm:bg-[#060335] max-sm:w-full `}>
