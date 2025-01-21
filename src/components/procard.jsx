@@ -8,7 +8,7 @@ export default function Procard(props) {
 
 
     return (
-        <div onClick={handleRedirect} className="bg-white text-gray-800 rounded-xl p-6 shadow-lg  hover:shadow-xl transition-all duration-300 hover:scale-105 max-w-full max-sm:h-72 max-lg:h-44">
+        <div onClick={handleRedirect} className="bg-white text-gray-800 rounded-xl p-6 shadow-lg  hover:shadow-xl transition-all duration-300 hover:scale-105 max-w-full max-sm:h-72 max-lg:h-44 overflow-hidden">
             <h1 className="font-semibold text-2xl mb-4 text-center text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
                 {props.name}
             </h1>

@@ -1,5 +1,5 @@
 import { FaInstagram, FaGithub, FaLinkedin, FaTelegram, FaJava ,FaTelegramPlane} from "react-icons/fa";
-import image from "../assets/photo.jpg";
+import image from "../assets/myimage.jpg";
 import image2 from "../assets/analyser.png";
 import image3 from "../assets/messenger.png";
 import Skills from "../components/skillcard";
@@ -33,13 +33,13 @@ export default function Home() {
                     </ul>
                 </nav>
             </header>
-            <section className="w-full flex justify-center items-center">
-                <section className="mt-48 mb-16 flex items-center justify-center w-4/5">
-                    <div className="flex-1">
-                        <p className="text-5xl leading-[1.2]">Hello <br /> I am <span className="text-yellow-800 font-semibold">Divyaprakash R</span> <br /> Web Developer</p>
-                        <p className="w-[82%] text-xl mt-5">Hello! I'am Divyaprakash, a passionate web developer with a solid foundation in HTML, CSS, and JavaScript. I specialize in creating dynamic and responsive front-end applications using technologies like Java, Python, and CSS.</p>
+            <section className="lg:p-10 w-full flex justify-center items-center ">
+                <section className="mt-32  md:mb-6 flex items-center justify-center w-4/5">
+                    <div className="flex-1 ml-3">
+                        <p className="text-5xl leading-[1.2] max-sm:text-3xl">Hello <br /> I am <span className="text-yellow-800 font-semibold">Divyaprakash R</span> <br /> Web Developer</p>
+                        <p className="ml-2 w-[82%] text-xl mt-5 ">Hello! I'am Divyaprakash, a passionate web developer with a solid foundation in HTML, CSS, and JavaScript. I specialize in creating dynamic and responsive front-end applications using technologies like Java, Python, and CSS.</p>
                         <div className="mt-7 ml-24">
-                            <ul className="flex flex-row gap-5 ">
+                            <ul className="flex flex-row gap-5 max-sm:ml-[-50px]">
                                 <li className="hover:scale-110 transition-all duration-200"><a href="https://www.instagram.com/rival_coder?utm_source=qr&igshid=YnQ3dWxwdXFvMWNi"><FaInstagram /></a></li>
                                 <li className="hover:scale-110 transition-all duration-200"><a href="https://github.com/Rivalcoder"><FaGithub /></a></li>
                                 <li className="hover:scale-110 transition-all duration-200"><a href="https://www.linkedin.com/in/divyaprakash-r-349746292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><FaLinkedin /></a></li>
@@ -47,17 +47,19 @@ export default function Home() {
                             </ul>
                         </div>
                     </div>
-                    <div className="flex-1 max-sm:hidden">
+                    <div className="flex max-sm:hidden ">
                         <div className="h-1/2 w-full">
-                            <img src={image} alt="No Image" className="rounded-3xl"></img>
+                            <img src={image} alt="No Image" className="rounded-full h-80 w-80 object-cover border-gray-600 border-4 shadow-red-500 shadow-md "></img>
                         </div>
                     </div>
                 </section>
             </section>
+
             <label id="Skills"></label>
+
             <section className=" flex flex-col justify-center items-center min-h-[80vh]">
                 <h1 className="pt-24  font-semibold text-5xl flex justify-center items-center text-transparent bg-clip-text bg-gradient-to-r from-gray-200 via-orange-400 to-red-500">My Skills</h1>
-                <div className="grid grid-cols-5 mt-16 max-sm:grid-cols-2 max-lg:grid-cols-3">
+                <div className="grid grid-cols-5 mt-16 max-sm:grid-cols-2 max-lg:grid-cols-3 place-items-center">
                     <Skills img={<SiExpress className="text-yellow-700 text-6xl hover:text-yellow-600 transition-all duration-200" />} head="Express" message="" />
                     <Skills img={<SiMongodb className="text-green-500 text-6xl hover:text-green-600 transition-all duration-200" />} head="MongoDb" message="" />
                     <Skills img={<SiJavascript className="text-yellow-500 text-6xl hover:text-yellow-600 transition-all duration-200" />} head="JavaScript" message="" />
