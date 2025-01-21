@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   background: #03002e;
   font-family: "Poppins", sans-serif;
@@ -42,6 +43,7 @@ nav {
   color: #c8a7d3;
   font-size: 30px;
   font-weight: 600;
+  
 }
 
 ul {
