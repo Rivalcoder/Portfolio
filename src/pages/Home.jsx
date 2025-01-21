@@ -10,7 +10,7 @@ import { MdOutlineMenuOpen } from "react-icons/md";
 import { SiC, SiExpress, SiPython, SiJavascript, SiMongodb, SiFigma, SiReact, SiNextdotjs, SiSocketdotio, SiFlask } from "react-icons/si";
 
 export default function Home() {
-    const [click, setclick] = useState(false);
+    const [click, setclick] = useState(true);
 
     const onclick = () => {
         setclick(!click);
@@ -24,7 +24,7 @@ export default function Home() {
                     <button className="hidden max-sm:block" onClick={onclick}><MdOutlineMenuOpen fontSize={35} /></button>
                     <a href="/" className="hover-text-3xl ml-3 hover:scale-110 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-yellow-300 to-green-400 hover:text-red-600 transition-all duration-200 ">Rival Coder</a>
                 </div>
-                    <ul className={`flex flex-row gap-10 text-xl mr-4 max-sm:flex-col max-sm:${click?"flex":"hidden"} max-sm:p-5 max-sm:self-start max-sm:bg-[#060335] max-sm:w-full `}>
+                    <ul className={`flex flex-row gap-10 text-xl mr-4 max-sm:flex-col max-sm:${click?"hidden":"flex"} max-sm:p-5 max-sm:self-start max-sm:bg-[#060335] max-sm:w-full `}>
                         <li className="hover:scale-110 transition-all duration-200 "><a href="#" className="hover:border-b-[3px] p-2 transition-all rounded-sm max-sm:p-5">Home</a></li>
                         <li className="hover:scale-110 transition-all duration-200 "><a href="#Skills" className="hover:border-b-[3px] p-2 transition-all rounded-sm max-sm:p-5 ">Skills</a></li>
                         <li className="hover:scale-110 transition-all duration-200 "><a href="#Projects" className="hover:border-b-[3px] p-2 transition-all rounded-sm max-sm:p-5">Projects</a></li>
